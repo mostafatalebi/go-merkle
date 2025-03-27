@@ -1,0 +1,10 @@
+package main
+
+import "merkle-tree/merkle"
+
+func main() {
+	var merkle = merkle.NewMerkleTree()
+	merkle.InsertMulti("R1", "R2", "R3", "R4", "R5", "R6", "R7")
+	merkle.CreateTree()
+	merkle.Print()
+}
